@@ -1,0 +1,19 @@
+.Pokedex-cards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.Pokedex-winner {
+  margin: 5px 0 0 0;
+  color: #4caf50;
+}
+
+.Pokedex-looser {
+  margin: 0;
+  color: #e91e63;
+}
+
+.Pokedex-total-exp {
+  margin: 0;
+}
