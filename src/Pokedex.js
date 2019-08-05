@@ -17,22 +17,23 @@ class Pokedex extends Component {
   }
 
   render(){
-    const { cardList, exp, isWinner } = this.props;
+    const { cardList, exp, isWinner, title } = this.props;
     const pokemonList = cardList.map( p => {
                           return (<Pokecard key={ p.id }
                                     id={ p.id }
                                     name={ p.name }
                                     type={ p.type }
                                     exp={ p.base_experience }
+                                    showCard={ false }
                                   />);
                         });                        
-    let title = <h3 className="Pokedex-looser">You Loose</h3>
+    let pokedexTitle = <h3 className="Pokedex-looser">{ `${title} Loose` }</h3>
     
-    if(isWinner) title = <h3 className="Pokedex-winner">You Win</h3>
+    if(isWinner) pokedexTitle = <h3 className="Pokedex-winner">{ `${title} Win` }</h3>
 
     return (
       <div className="Pokedex">
-        { title }
+        { pokedexTitle }
         <h4 className="Pokedex-total-exp">Total Experience: { exp }</h4>
         <div className="Pokedex-cards">
           { pokemonList }

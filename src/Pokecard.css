@@ -22,3 +22,11 @@
   transform: scale(1.2);
   opacity: 0.7;
 }
+
+.Pokecard-hideCard {
+  display: none;
+}
+
+.Pokecard-showCard {
+  display: block;
+}

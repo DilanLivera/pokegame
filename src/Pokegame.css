@@ -1,0 +1,25 @@
+.Pokegame-play-btn {
+  width: 100px;
+  padding: 5px;
+  margin-bottom: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 3px;
+  background-color: #83ffcd;
+  border: 1px solid #222;
+  box-shadow: 2px 2px #222;
+  cursor: pointer;
+}
+
+.Pokegame-play-btn:hover {  
+  background-color: rgb(255, 155, 161);
+}
+
+.Pokegame-play-btn:active {
+  transform: scale(0.95);
+}
+
+.Pokegame-play-btn:focus {
+  outline: none;
+  border-bottom: 2px solid #222;
+}
